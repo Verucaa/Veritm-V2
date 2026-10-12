@@ -1056,11 +1056,11 @@ fun LocalPlaylistHeader(
                             Modifier
                                 .size(240.dp)
                                 .shadow(
-                                    elevation = 16.dp,
-                                    shape = RoundedCornerShape(3.dp),
+                                    elevation = 24.dp,
+                                    shape = RoundedCornerShape(ThumbnailCornerRadius),
+                                    spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f),
                                 ),
-                        shape = RoundedCornerShape(3.dp),
-                        color = MaterialTheme.colorScheme.surfaceVariant,
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                     ) {
                         Box(
                             modifier = Modifier.fillMaxSize(),

@@ -81,8 +81,7 @@ fun <E> ChipsRow(
                     selectedContainerColor = MaterialTheme.colorScheme.primary,
                     selectedLabelColor = MaterialTheme.colorScheme.onPrimary,
                 ),
-                onClick = { onValueUpdate(value) },
-                shape = RoundedCornerShape(16.dp),
+                shape = RoundedCornerShape(20.dp),
             )
 
             Spacer(Modifier.width(8.dp))
@@ -142,11 +141,7 @@ fun <Int> ChoiceChipsRow(
                         modifier = Modifier.graphicsLayer(rotationZ = rotationAnimation),
                     )
                 },
-                shape = RoundedCornerShape(16.dp),
-                colors = AssistChipDefaults.assistChipColors(
-                    containerColor = containerColor,
-                    labelColor = MaterialTheme.colorScheme.onSurface
-                )
+                shape = RoundedCornerShape(20.dp),
             )
 
             AnimatedVisibility(
@@ -198,7 +193,11 @@ fun <Int> ChoiceChipsRow(
                             containerColor = containerColor,
                         ),
                         onClick = { onValueUpdate(value) },
-                        shape = RoundedCornerShape(16.dp),
+                shape = RoundedCornerShape(20.dp),
+                colors = AssistChipDefaults.assistChipColors(
+                    containerColor = containerColor,
+                    labelColor = MaterialTheme.colorScheme.onSurface
+                )
                             )
                 }
             }
