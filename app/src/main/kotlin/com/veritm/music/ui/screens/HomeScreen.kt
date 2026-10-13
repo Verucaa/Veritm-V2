@@ -101,7 +101,7 @@ import com.veritm.innertube.models.EpisodeItem
 import com.veritm.innertube.models.PlaylistItem
 import com.veritm.innertube.models.PodcastItem
 import com.veritm.innertube.models.SongItem
-import com.veritm.innertube.models.WatchEndpoint
+import com.veritm.innertube.models.VideoItem
 import com.veritm.innertube.models.YTItem
 import com.veritm.innertube.utils.completed
 import com.veritm.innertube.utils.parseCookieString
