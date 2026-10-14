@@ -1084,10 +1084,10 @@ fun LocalPlaylistHeader(
                                 .size(240.dp)
                                 .shadow(
                                     elevation = 24.dp,
-                                    shape = RoundedCornerShape(3.dp),
+                                    shape = RoundedCornerShape(ThumbnailCornerRadius),
                                     spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f),
                                 ),
-                        shape = RoundedCornerShape(3.dp),
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                     ) {
                         AsyncImage(
                             model = overrideThumbnail.value ?: playlist.thumbnails[0],
@@ -1153,10 +1153,10 @@ fun LocalPlaylistHeader(
                                 .size(240.dp)
                                 .shadow(
                                     elevation = 24.dp,
-                                    shape = RoundedCornerShape(3.dp),
+                                    shape = RoundedCornerShape(ThumbnailCornerRadius),
                                     spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f),
                                 ),
-                        shape = RoundedCornerShape(3.dp),
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                     ) {
                         Box(modifier = Modifier.fillMaxSize()) {
                             listOf(

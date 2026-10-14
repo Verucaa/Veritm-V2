@@ -80,6 +80,7 @@ import com.veritm.music.constants.HideExplicitKey
 import com.veritm.music.constants.SongSortDescendingKey
 import com.veritm.music.constants.SongSortType
 import com.veritm.music.constants.SongSortTypeKey
+import com.veritm.music.constants.ThumbnailCornerRadius
 import com.veritm.music.db.entities.Song
 import com.veritm.music.extensions.toMediaItem
 import com.veritm.music.playback.queues.ListQueue
@@ -492,10 +493,10 @@ private fun CachePlaylistHeader(
                     .size(240.dp)
                     .shadow(
                         elevation = 24.dp,
-                        shape = RoundedCornerShape(3.dp),
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                         spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)
                     ),
-                shape = RoundedCornerShape(3.dp)
+                shape = RoundedCornerShape(ThumbnailCornerRadius)
             ) {
                 AsyncImage(
                     model = songs.first().thumbnailUrl,

@@ -80,6 +80,7 @@ import com.veritm.music.LocalPlayerAwareWindowInsets
 import com.veritm.music.LocalPlayerConnection
 import com.veritm.music.R
 import com.veritm.music.constants.MyTopFilter
+import com.veritm.music.constants.ThumbnailCornerRadius
 import com.veritm.music.db.entities.Song
 import com.veritm.music.extensions.toMediaItem
 import com.veritm.music.playback.ExoDownloadService
@@ -549,10 +550,10 @@ private fun TopPlaylistHeader(
                     .size(240.dp)
                     .shadow(
                         elevation = 24.dp,
-                        shape = RoundedCornerShape(3.dp),
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                         spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)
                     ),
-                shape = RoundedCornerShape(3.dp)
+                shape = RoundedCornerShape(ThumbnailCornerRadius)
             ) {
                 AsyncImage(
                     model = songs[0].thumbnailUrl,

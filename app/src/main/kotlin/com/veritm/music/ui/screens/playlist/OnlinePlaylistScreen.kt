@@ -88,6 +88,7 @@ import com.veritm.music.LocalPlayerConnection
 import com.veritm.music.LocalSyncUtils
 import com.veritm.music.R
 import com.veritm.music.constants.HideExplicitKey
+import com.veritm.music.constants.ThumbnailCornerRadius
 import com.veritm.music.db.entities.Playlist
 import com.veritm.music.db.entities.PlaylistEntity
 import com.veritm.music.db.entities.PlaylistSongMap
@@ -512,10 +513,10 @@ private fun OnlinePlaylistHeader(
                     .size(240.dp)
                     .shadow(
                         elevation = 24.dp,
-                        shape = RoundedCornerShape(3.dp),
+                        shape = RoundedCornerShape(ThumbnailCornerRadius),
                         spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f),
                     ),
-            shape = RoundedCornerShape(3.dp),
+            shape = RoundedCornerShape(ThumbnailCornerRadius),
         ) {
             AsyncImage(
                 model = ImageRequest.Builder(LocalContext.current).data(playlist.thumbnail?.resize(1080, 1080)).build(),
