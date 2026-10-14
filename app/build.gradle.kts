@@ -7,7 +7,7 @@ if (localPropertiesFile.exists()) {
     localProperties.load(localPropertiesFile.inputStream())
 }
 
-val baseApplicationId = "com.veritm.music.v2"
+val baseApplicationId = "com.veritm.v2"
 val applicationIdOverride = System.getenv("VERITM_APPLICATION_ID")?.takeIf { it.isNotBlank() }
 val appNameOverride = System.getenv("VERITM_APP_NAME")?.takeIf { it.isNotBlank() }
 val buildCommit =
@@ -45,7 +45,7 @@ android {
         val baseVersionName = requireNotNull(versionName)
         buildConfigField("String", "BASE_VERSION_NAME", "\"$baseVersionName\"")
         buildCommit?.let { versionName = "$baseVersionName+$it" }
-        resValue("string", "app_name", appNameOverride ?: "Veritm V2")
+        resValue("string", "app_name", appNameOverride ?: "Veritmku")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
