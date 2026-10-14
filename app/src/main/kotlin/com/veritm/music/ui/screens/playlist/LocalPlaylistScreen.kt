@@ -114,6 +114,7 @@ import com.veritm.music.constants.PlaylistEditLockKey
 import com.veritm.music.constants.PlaylistSongSortDescendingKey
 import com.veritm.music.constants.PlaylistSongSortType
 import com.veritm.music.constants.PlaylistSongSortTypeKey
+import com.veritm.music.constants.SwipeToRemoveSongKey
 import com.veritm.music.constants.ThumbnailCornerRadius
 import com.veritm.music.db.entities.Playlist
 import com.veritm.music.db.entities.PlaylistSong

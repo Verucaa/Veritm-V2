@@ -101,7 +101,8 @@ import com.veritm.innertube.models.EpisodeItem
 import com.veritm.innertube.models.PlaylistItem
 import com.veritm.innertube.models.PodcastItem
 import com.veritm.innertube.models.SongItem
-import com.veritm.innertube.models.VideoItem
+import com.veritm.innertube.models.WatchEndpoint
+
 import com.veritm.innertube.models.YTItem
 import com.veritm.innertube.utils.completed
 import com.veritm.innertube.utils.parseCookieString
@@ -915,7 +916,7 @@ fun HomeScreen(
             isActive = item.id in listOf(mediaMetadata?.album?.id, mediaMetadata?.id),
             isPlaying = isPlaying,
             coroutineScope = scope,
-            thumbnailRatio = if (item is SongItem || item is VideoItem) 16f / 9 else 1f,
+            thumbnailRatio = if (item is SongItem) 16f / 9 else 1f,
             modifier =
                 Modifier
                     .combinedClickable(
